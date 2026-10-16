@@ -1,5 +1,3 @@
-pandas
-numpy
-scikit-learn
-joblib
-matplotlib
+# Installs the application and every runtime dependency declared in pyproject.toml.
+# Includes the fomo-detector CLI and the fomo-api service command.
+-e .

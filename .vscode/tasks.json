@@ -1,0 +1,32 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Run FOMO Detector",
+			"type": "shell",
+			"command": "venv/bin/fomo-detector",
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Start FOMO Python API",
+			"type": "shell",
+			"command": "python -m fomo_detector.api --host 127.0.0.1 --port 8765",
+			"isBackground": true,
+			"problemMatcher": []
+		},
+		{
+			"label": "Launch FOMO JavaFX Dashboard",
+			"type": "shell",
+			"command": "mvn",
+			"args": [
+				"-f",
+				"java-client/pom.xml",
+				"javafx:run"
+			],
+			"isBackground": true,
+			"problemMatcher": []
+		}
+	]
+}

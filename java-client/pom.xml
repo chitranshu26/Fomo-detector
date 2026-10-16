@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.fomo</groupId>
+    <artifactId>fomo-detector-client</artifactId>
+    <version>1.0.0</version>
+    <name>FOMO Detector</name>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.release>21</maven.compiler.release>
+        <javafx.version>21.0.8</javafx.version>
+        <gluonfx.version>1.0.29</gluonfx.version>
+        <main.class>org.fomo.detector.FomoDetectorApp</main.class>
+        <gluonfx.target>host</gluonfx.target>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-controls</artifactId>
+            <version>${javafx.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>2.13.1</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.14.0</version>
+                <configuration>
+                    <release>${maven.compiler.release}</release>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.openjfx</groupId>
+                <artifactId>javafx-maven-plugin</artifactId>
+                <version>0.0.8</version>
+                <configuration>
+                    <mainClass>${main.class}</mainClass>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>com.gluonhq</groupId>
+                <artifactId>gluonfx-maven-plugin</artifactId>
+                <version>${gluonfx.version}</version>
+                <configuration>
+                    <target>${gluonfx.target}</target>
+                    <mainClass>${main.class}</mainClass>
+                    <appIdentifier>org.fomo.detector</appIdentifier>
+                    <releaseConfiguration>
+                        <appLabel>FOMO Detector</appLabel>
+                        <versionCode>1</versionCode>
+                        <versionName>${project.version}</versionName>
+                    </releaseConfiguration>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <profiles>
+        <profile>
+            <id>android</id>
+            <properties>
+                <gluonfx.target>android</gluonfx.target>
+            </properties>
+        </profile>
+    </profiles>
+</project>

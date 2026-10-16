@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fomo-detector"
+version = "1.0.0"
+description = "Synthetic EEG feature classification and simulation CLI"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "joblib>=1.3,<2",
+    "numpy>=1.24,<3",
+    "pandas>=2.0,<4",
+    "scikit-learn>=1.3,<2",
+    "fastapi>=0.115,<1",
+    "uvicorn[standard]>=0.34,<1",
+]
+
+[project.scripts]
+fomo-detector = "fomo_detector.cli:main"
+fomo-api = "fomo_detector.api:main"
+
+[tool.setuptools.packages.find]
+include = ["fomo_detector*"]
