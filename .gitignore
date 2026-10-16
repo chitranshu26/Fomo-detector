@@ -1,73 +1,67 @@
-# =========================
-# Python cache
-# =========================
+# Python bytecode and test/type-check caches
 __pycache__/
-*.pyc
-*.pyo
-*.pyd
 *.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.hypothesis/
+.tox/
+.nox/
+htmlcov/
+.coverage
+.coverage.*
 
-# =========================
-# Virtual Environment
-# =========================
+# Virtual environments (common names and tools)
 venv/
+venv*/
 env/
+env*/
 ENV/
 .venv/
+.virtualenv/
+.python-env/
+virtualenv/
+site-packages/
 
-# =========================
-# Jupyter Notebook
-# =========================
-.ipynb_checkpoints/
-
-# =========================
-# Logs
-# =========================
-logs/
-*.log
-
-# =========================
-# Model files (IMPORTANT)
-# =========================
-models/
-*.pkl
-*.h5
-
-# =========================
-# Dataset (optional ignore)
-# =========================
-# data/
-# *.csv
-
-# 👉 If you want to keep dataset, comment above line
-
-# =========================
-# OS Files
-# =========================
-.DS_Store
-Thumbs.db
-
-# =========================
-# IDE / Editor
-# =========================
-.vscode/
-.idea/
-
-# =========================
-# Environment variables
-# =========================
-.env
-
-# =========================
-# Build / dist
-# =========================
+# Package and build outputs
 build/
 dist/
 *.egg-info/
+pip-wheel-metadata/
+**/target/
+**/.gradle/
+*.class
+*.war
 
-# =========================
-# Temporary files
-# =========================
+# Generated runtime logs and temporary files
+logs/
+*.log
 *.tmp
 *.bak
 *.swp
+*.swo
+*~
+
+# Local secrets and machine-specific environment configuration
+.env
+.env.*
+!.env.example
+!.env.template
+.secrets/
+*.pem
+*.key
+
+# IDE settings: keep .vscode/tasks.json and shared workspace configuration
+.idea/
+*.iml
+.fleet/
+
+# Operating system files
+.DS_Store
+._*
+Thumbs.db
+Desktop.ini
+
+# Jupyter-generated state
+.ipynb_checkpoints/

@@ -1,0 +1,208 @@
+.root {
+    -fx-font-family: "System";
+    -fx-font-size: 13px;
+    -fx-background-color: #f2f5f2;
+}
+
+.app-root {
+    -fx-background-color: #f2f5f2;
+}
+
+.header {
+    -fx-padding: 28px 32px 20px 32px;
+    -fx-background-color: #172b27;
+}
+
+.eyebrow, .field-label {
+    -fx-font-size: 10px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #83d1b0;
+}
+
+.page-title {
+    -fx-font-family: "Serif";
+    -fx-font-size: 34px;
+    -fx-text-fill: #f4f7ef;
+}
+
+.subtitle {
+    -fx-text-fill: #bac9c1;
+    -fx-font-size: 14px;
+}
+
+.connection-online, .connection-offline {
+    -fx-padding: 9px 13px;
+    -fx-background-radius: 3px;
+    -fx-font-weight: bold;
+}
+
+.connection-online {
+    -fx-text-fill: #c4f3dc;
+    -fx-background-color: #274a40;
+}
+
+.connection-offline {
+    -fx-text-fill: #ffe0c2;
+    -fx-background-color: #694739;
+}
+
+.connection-bar {
+    -fx-padding: 12px 14px;
+    -fx-background-color: #213a34;
+    -fx-background-radius: 4px;
+}
+
+.connection-bar > .label {
+    -fx-text-fill: #b8cac2;
+    -fx-font-size: 10px;
+    -fx-font-weight: bold;
+}
+
+.connection-bar .text-field {
+    -fx-background-color: #152722;
+    -fx-text-fill: #eff7f2;
+    -fx-prompt-text-fill: #9aada5;
+    -fx-border-color: #49665d;
+    -fx-border-radius: 3px;
+    -fx-background-radius: 3px;
+    -fx-padding: 9px 11px;
+}
+
+.content-scroll, .content-scroll > .viewport {
+    -fx-background-color: #f2f5f2;
+}
+
+.section-title {
+    -fx-font-family: "Serif";
+    -fx-font-size: 25px;
+    -fx-text-fill: #1a302a;
+}
+
+.section-caption, .body-copy {
+    -fx-text-fill: #65756d;
+    -fx-font-size: 12px;
+}
+
+.surface-card {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 5px;
+    -fx-border-color: #dce5df;
+    -fx-border-radius: 5px;
+    -fx-effect: dropshadow(gaussian, rgba(26, 48, 42, 0.05), 12, 0, 0, 3);
+}
+
+.card-title {
+    -fx-font-family: "Serif";
+    -fx-font-size: 21px;
+    -fx-text-fill: #20372f;
+}
+
+.status-line {
+    -fx-text-fill: #315f4d;
+    -fx-font-weight: bold;
+}
+
+.metric-tile {
+    -fx-padding: 13px 16px;
+    -fx-background-color: #e3ece6;
+    -fx-background-radius: 4px;
+    -fx-border-color: #d0ddd5;
+    -fx-border-radius: 4px;
+}
+
+.metric-caption {
+    -fx-text-fill: #64786d;
+    -fx-font-size: 9px;
+    -fx-font-weight: bold;
+}
+
+.metric-value {
+    -fx-text-fill: #1d4b39;
+    -fx-font-family: "Serif";
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+}
+
+.primary-button, .secondary-button, .danger-button {
+    -fx-padding: 10px 15px;
+    -fx-background-radius: 3px;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+}
+
+.primary-button {
+    -fx-background-color: #247458;
+    -fx-text-fill: white;
+}
+
+.primary-button:hover {
+    -fx-background-color: #1b6249;
+}
+
+.secondary-button {
+    -fx-background-color: #d5e8de;
+    -fx-text-fill: #1b4938;
+}
+
+.danger-button {
+    -fx-background-color: #f7e6df;
+    -fx-text-fill: #8f392d;
+}
+
+.primary-button:disabled, .danger-button:disabled, .secondary-button:disabled {
+    -fx-opacity: 0.5;
+}
+
+.spinner, .spinner .text-field {
+    -fx-background-radius: 3px;
+}
+
+.table-view {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #e0e8e3;
+    -fx-border-radius: 3px;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #edf3ef;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: #4b6257;
+    -fx-font-size: 10px;
+    -fx-font-weight: bold;
+}
+
+.chart-plot-background {
+    -fx-background-color: #fbfcfb;
+}
+
+.chart-series-line {
+    -fx-stroke: #24805e;
+    -fx-stroke-width: 2px;
+}
+
+.default-color1.chart-series-line {
+    -fx-stroke: #d48646;
+    -fx-stroke-dash-array: 7 5;
+    -fx-stroke-width: 1.5px;
+}
+
+.chart-vertical-grid-lines, .chart-horizontal-grid-lines {
+    -fx-stroke: #e5ece7;
+}
+
+.axis-label, .axis-tick-mark, .axis-tick-label {
+    -fx-text-fill: #74857c;
+    -fx-font-size: 10px;
+}
+
+.footer {
+    -fx-padding: 13px 30px;
+    -fx-background-color: #e5ece7;
+}
+
+.disclaimer {
+    -fx-text-fill: #5e7066;
+    -fx-font-size: 11px;
+}
